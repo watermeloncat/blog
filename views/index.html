@@ -5,10 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<title><%= title %></title>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-	<script type="text/javascript" href="/javascripts/jquery-3.1.1.js"></script>
-	<script>$(function(){
-		 $('.btn-publish').on('click', function() {console.log('lala')})
-		})</script>
+	<script type="text/javascript" src="/javascripts/jquery-3.1.1.js"></script>
 </head>
 <body>
 	<h3 class=""><%= name %></h3>
@@ -33,5 +30,7 @@
 		</ul>
 	</div>
 </body>
-
+	<script>$(function(){
+		 $('.btn-publish').on('click', function() {console.log('lala')})
+		})</script>
 </html>
