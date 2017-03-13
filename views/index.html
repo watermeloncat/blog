@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title><%= title %></title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script type="text/javascript" href="/javascripts/jquery-3.1.1.js"></script>
+	<script>$(function(){
+		 $('.btn-publish').on('click', function() {console.log('lala')})
+		})</script>
+</head>
+<body>
+	<h3 class=""><%= name %></h3>
+	<div class="blog-add">
+		<div class="blog-textarea">
+			<textarea class="textarea-add" cols="30" rows="10"></textarea>
+		</div>
+		<p class="blog-action">
+			<a class="btn-publish" href="javascript:;">发布</a>
+		</p>
+	</div>
+	<div class="blog">
+		<ul>
+			<li>
+				<p class="content">hello</p>
+				<p class="blog-extra">
+					<span class="date">2016-12-24</span>
+					<a href="javascript:;" class="delete">删除</a>
+					<a href="javascript:;" class="update">更新</a>
+				</p>
+			</li>
+		</ul>
+	</div>
+</body>
+
+</html>
