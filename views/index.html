@@ -18,15 +18,17 @@
 		</p>
 	</div>
 	<div class="blog">
-		<ul>
-			<li>
-				<p class="content">hello</p>
-				<p class="blog-extra">
-					<span class="date">2016-12-24</span>
-					<a href="javascript:;" class="delete">删除</a>
-					<a href="javascript:;" class="update">更新</a>
-				</p>
-			</li>
+		<ul class="blog-list">
+			<% for(var i=0; i<content.length; i++) { %>
+				<li class="blog-item">
+					<p class="blog-content"> <%= content[i].content %> </p>
+					<p class="blog-extra">
+						<span class="date"> <%= content[i].date %> </span>
+						<a href="javascript:;" class="delete" data-content="<%= content[i].content %>">删除</a>
+						<a href="javascript:;" class="update" data-content="<%= content[i].content %>">更新</a>
+					</p>
+				</li>
+			<% } %>
 		</ul>
 	</div>
 </body>
